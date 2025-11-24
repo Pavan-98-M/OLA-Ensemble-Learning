@@ -1,65 +1,32 @@
-Ola Driver Attrition Prediction (Machine Learning Project)
+# Ola Driver Attrition Prediction (Machine Learning Project)
 
-This project aims to predict driver churn for Ola using machine learning techniques. By identifying at-risk drivers early, the business can improve retention efforts and reduce high acquisition costs. The solution uses feature engineering, model optimization, and insights extraction to support data-driven decision-making.
+This project predicts driver churn for Ola by analyzing 19,000+ driver performance, income, and service-related records. The goal is to identify at-risk drivers early and support data-driven retention strategies to reduce high acquisition costs.
 
-Objectives
+## Tech Stack
+Python | Pandas | NumPy | Scikit-Learn | XGBoost | SMOTE | Matplotlib | Seaborn
 
-Predict whether a driver is likely to leave the platform
+## Project Workflow
+- Data cleaning and preprocessing
+- Feature engineering (service months, income growth, rating change)
+- Model building using Random Forest, Gradient Boosting, XGBoost
+- Handling class imbalance with SMOTE
+- Model evaluation using Accuracy, ROC-AUC, and confusion matrix
 
-Understand key factors influencing driver churn
+## Performance
+- Best model achieved ~79% test accuracy
 
-Provide insights to support proactive retention strategies
+## Key Insights
+- Shorter service duration and low rating improvement indicate higher churn risk
+- Income growth and business value are strong predictors
+- Findings support targeted retention planning
 
-Dataset
+## Business Impact
+Improves early churn detection for cost-effective driver retention and reduced operational expense.
 
-19,000+ driver records containing demographic, rating, income and trip performance data
+## Future Enhancements
+- SHAP-based model explainability
+- Deployment using Streamlit or Flask
+- Real-time churn prediction dashboard
 
-Tech Stack
-
-Python, Pandas, NumPy, Scikit-Learn, XGBoost, Matplotlib, Seaborn, SMOTE
-
-Machine Learning Workflow
-
-Data cleaning and preprocessing
-
-Feature engineering (service months, income growth, ratings change, etc.)
-
-Model training: Random Forest, Gradient Boosting, XGBoost
-
-Handling imbalance using SMOTE
-
-Model evaluation using accuracy, ROC-AUC and confusion matrix
-
-Best model performance: Approximately 79% test accuracy
-
-Key Insights
-
-Service duration and income growth are strong churn indicators
-
-Drivers with low performance improvements are more likely to leave
-
-Business value and grading trends help predict attrition risk
-
-Business Impact
-
-Supports early churn detection and cost-effective retention planning for Ola through targeted driver engagement.
-
-Project Structure
-data/
-notebooks/
-src/
-README.md
-requirements.txt
-
-Future Enhancements
-
-Add explainability using SHAP
-
-Deploy using Streamlit or Flask
-
-Build real-time monitoring dashboard
-
-Author
-
-Pavan Meti
-Data Analyst | Machine Learning Enthusiast
+## Author
+Pavan Meti | Data Analyst | Machine Learning Enthusiast
